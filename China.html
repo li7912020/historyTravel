@@ -14,11 +14,11 @@
         <div class="message">中国の歴史へようこそ</div>
             <img src="images/China_Map.jpg" alt="中国地図">
             <div>
-                <select class="select_century" name=”century” onchange="selectbox_move()">
-                    <option value=”init”>-- 何世紀の歴史をみたいですか？ --</option>
-                    <option value=”1st”>1世紀</option>
+                <select id="select_century" name=”century”>
+                    <option value="Asia.html">-- 何世紀の歴史をみたいですか？ --</option>
+                    <option value="https://www.google.com/">1世紀</option>
                     <option value=”2nd”>2世紀</option>
-                    <option value=”Chinese_History/3rd_century.html”>3世紀</option>
+                    <option value=Chinese_History/3rd_century.html>3世紀</option>
                     <option value=”4th”>4世紀</option>
                     <option value=”5th”>5世紀</option>
                     <option value=”6th”>6世紀</option>
@@ -29,7 +29,14 @@
                     <option value=”11th”>11世紀</option>
                     <option value=”12th”>12世紀</option>
                 </select>
-            </div>
+            </div> 
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script>
+        const selected = document.getElementById("select_century");
+        selected.onchange = function() {
+            window.location.href = selected.value;
+        };
+    </script>
 </body>
 </html>
