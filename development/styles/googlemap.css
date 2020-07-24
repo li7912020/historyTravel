@@ -1,0 +1,33 @@
+.googlemap {
+    width: 500px;
+    height: 400px;
+    /* frameborder: 0; */
+    border: 0;
+    /* allowfullscreen: 0;
+    aria-hidden: false;
+    tabindex: 0; */
+}
+
+.split-half {
+    margin-top: 50px;
+    display: table;
+	width:100%;
+}
+
+.split-half .byside {
+    display: table-cell;
+	vertical-align: top;
+	width:50%;
+	padding-right:0;
+	padding-left:30px;
+    overflow:hidden;
+}
+
+#text {
+    text-align: start;
+}
+
+.youtube {
+    width: 100%;
+    height: 100%;
+}
